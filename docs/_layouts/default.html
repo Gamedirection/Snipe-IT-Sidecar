@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}Snipe-IT Sidecar</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+
+<header class="site-header">
+  <h1><a href="{{ "/" | relative_url }}">Snipe-IT Sidecar</a></h1>
+  <p>Operational playbooks beyond inventory tracking</p>
+</header>
+
+<nav class="site-nav">
+  <a href="{{ "/" | relative_url }}">Home</a>
+  <a href="{{ "/vendor-scoping/" | relative_url }}">Vendor</a>
+  <a href="{{ "/shipment-tracking/" | relative_url }}">Shipment</a>
+  <a href="{{ "/security-setup/" | relative_url }}">Security</a>
+  <a href="{{ "/documentation/" | relative_url }}">Docs</a>
+  <a href="{{ "/production-handoff/" | relative_url }}">Handoff</a>
+  <a href="{{ "/changelog" | relative_url }}">Changelog</a>
+</nav>
+
+<main class="container">
+  {{ content }}
+</main>
+
+<footer class="footer">
+  <p><a href="https://github.com/Gamedirection/Snipe-IT-Sidecar">GitHub</a> &middot; Supplements <a href="https://snipeitapp.com">Snipe-IT</a></p>
+</footer>
+
+</body>
+</html>

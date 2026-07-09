@@ -1,0 +1,72 @@
+/*
+ * Snipe-IT Sidecar — Standalone CSS
+ *
+ * Use this to style a reference page or inject into
+ * Snipe-IT Admin → Brand Settings → Custom CSS
+ */
+
+:root {
+  --primary: #2c3e50;
+  --accent: #3498db;
+  --success: #27ae60;
+  --warning: #f39c12;
+  --danger: #e74c3c;
+  --bg: #f8f9fa;
+  --card: #ffffff;
+  --text: #333;
+  --muted: #7f8c8d;
+}
+
+.sidecar-checklist {
+  list-style: none;
+  padding-left: 0;
+}
+.sidecar-checklist li {
+  padding: 0.35rem 0 0.35rem 1.5rem;
+  position: relative;
+}
+.sidecar-checklist li::before {
+  content: "\2610";
+  position: absolute;
+  left: 0;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+.sidecar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+.sidecar-table th,
+.sidecar-table td {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+.sidecar-table th {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+.sidecar-table tr:nth-child(even) td {
+  background: #f4f5f6;
+}
+
+.sidecar-callout {
+  border-left: 4px solid var(--accent);
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  background: rgba(52, 152, 219, 0.08);
+  border-radius: 0 4px 4px 0;
+}
+
+.sidecar-callout-warning {
+  border-left-color: var(--warning);
+  background: rgba(243, 156, 18, 0.08);
+}
+
+.sidecar-callout-danger {
+  border-left-color: var(--danger);
+  background: rgba(231, 76, 60, 0.08);
+}

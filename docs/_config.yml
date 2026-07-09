@@ -1,0 +1,8 @@
+title: Snipe-IT Sidecar
+description: Operational playbooks for vendor scoping, shipment tracking, security setup, documentation, and production handoff
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
